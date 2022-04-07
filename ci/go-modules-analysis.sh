@@ -13,6 +13,6 @@ if [ -z "$VERSION" ] ; then
 fi
 
 echo "debug"
-ls -la
+ls -laR .git
 
-sonar-scanner -Dsonar.projectVersion="$VERSION" -Dsonar.login="$1" -Dsonar.host.url="$2"
+sonar-scanner -Dsonar.projectVersion="$VERSION"
