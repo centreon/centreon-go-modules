@@ -12,4 +12,7 @@ if [ -z "$VERSION" ] ; then
   exit 1
 fi
 
+echo "DEBUG"
+ls -la
+
 sonar-scanner -X -Dsonar.projectVersion="$VERSION" -Dsonar.login="$1" -Dsonar.host.url="$2"
