@@ -3,7 +3,7 @@
 pipeline {
   agent any
   stages {
-    stage('Sonarqube analysis') {
+    stage('Source code analysis') {
       parallel {
         stage('Sonarqube analysis') {
           agent any
